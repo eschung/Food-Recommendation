@@ -1,0 +1,69 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-size: 12px;
+}
+
+h1 {
+    color: #525454;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+hr {
+    background: #D0D7D9;
+    height: 1px;
+    margin: 20px 0 20px 0;
+    border: none;
+}
+
+#map {
+    bottom:0px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width:67%
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    height: 100%;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .options-box {
+	width:33%;
+    }
+}
+
+.options-box {
+    border: 1px solid #999;
+    border-radius: 3px;
+    height: 100%; 
+    line-height: 35px;
+    text-align: left;
+}
+
+.text {
+    font-size: 12px;
+}
+
+.search-list{
+    height: 92%;
+    width: 100%;
+}

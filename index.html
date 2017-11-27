@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Food Recommendation</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body>
+      <h3>Food Recommendation - Duluth</h3>
+      <div class="container">
+         <div class="box options-box">
+            <span class="text">Search for nearby places or press enter to see a list of locations</span>
+            <form data-bind="submit: search">
+               <input id="places-search" data-bind="value: query, valueUpdate: 'afterkeydown'" type="text" placeholder="Enter a restaurant here">
+            </form>
+            <select class="search-list" multiple="multiple" data-bind="options:filteredList, value:selectedOption, event: { 'change': bounce }"></select>
+         </div>
+         <div class="box" id="map"></div>
+      </div>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/lib/knockout-3.2.0.js"></script>
+      <script src="js/script.js"></script>
+      <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtyDN8wufOw-Et7JNVg4wEZvUXE1z8VZs&callback=mapAppInit" onerror="googleMapsErrorHandling()"></script>
+   </body>
+</html>
