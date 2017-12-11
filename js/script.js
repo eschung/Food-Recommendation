@@ -26,6 +26,7 @@ var locationList = [{
     },	
 ];
 
+/*
 function getExtract(link, location) {
     var extract;
     $.ajax({
@@ -49,6 +50,7 @@ function getExtract(link, location) {
     });
     return extract;
 }
+*/
 
 var Location = function(data) {
     var self = this;
@@ -57,10 +59,12 @@ var Location = function(data) {
     this.lng = data.lng;
     this.visible = ko.observable(true);
 
+    /*
     this.link = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&origin=*&exintro=&explaintext=&titles=";
     this.link = this.link + this.title.split(' ').join('_');
 
     this.extract = getExtract(this.link, this);
+    */
     //this.extract = "test";
 
     this.marker = new google.maps.Marker({
@@ -68,10 +72,12 @@ var Location = function(data) {
         map: map
     });
 
+    /*
     // listener for info window
     this.marker.addListener('click', function() {
         self.infowindow.open(map, this);
     });
+    */
 
     this.showMarker = ko.computed(function() {
         if (this.visible() === true) {

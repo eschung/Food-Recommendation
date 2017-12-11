@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+.title {
+    text-align:center;
+}
+
 hr {
     background: #D0D7D9;
     height: 1px;
@@ -61,6 +65,17 @@ hr {
 
 .text {
     font-size: 12px;
+}
+
+.form-box{
+    text-align:center
+}
+
+.search-box{
+    font-size: 12px;
+    width: 90%;
+    height: 10%;
+    text-align:center
 }
 
 .search-list{
